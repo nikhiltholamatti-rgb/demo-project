@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Instrument Serif', Georgia, serif;
+    --font-body: 'Newsreader', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-heading: 'Cinzel Decorative', Georgia, serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #12100e;
+    color: #ede7dc;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+
+  .font-cinzel {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Tactile paper texture and parchment backgrounds */
+.bg-parchment {
+  background-color: #1a1613;
+  background-image: radial-gradient(#2a221a 0.75px, transparent 0.75px), radial-gradient(#261f18 0.75px, #1a1613 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.bg-paper-light {
+  background-color: #f7f3ea;
+  color: #2b2721;
+  background-image: radial-gradient(#dfd6c5 0.5px, transparent 0.5px);
+  background-size: 16px 16px;
+}
+
+/* 3D perspective styling */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #14110e;
+}
+::-webkit-scrollbar-thumb {
+  background: #3c3227;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c98d48;
+}
+
+/* Gold leaf foil border */
+.gold-border {
+  border: 1px solid rgba(201, 141, 72, 0.35);
+  box-shadow: 0 0 15px -3px rgba(201, 141, 72, 0.15);
+}
+
+.gold-glow {
+  text-shadow: 0 0 20px rgba(201, 141, 72, 0.4);
+}
